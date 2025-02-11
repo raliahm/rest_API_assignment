@@ -99,7 +99,7 @@ public class RestApiController {
                     String fcode = geoname.get("fcode").asText();
                     System.out.println("fcode: " + fcode);
 
-                    gn = new geonames(adminCode1,lng,distance,geonameId,toponymName,countryId,fcl,population, countryCode,name,fclName, adminCodes1, countryName,fcodeName,adminName1,lat,fcode);
+                    gn = new geonames(adminCode1,lng,distance,geonameId,toponymName,countryId,fcl,population, countryCode,name,fclName, countryName,fcodeName,adminName1,lat,fcode);
                     System.out.println("geonames: " + gn.getToponymName());
                     geonamesList.add(gn);
                 }
