@@ -12,7 +12,7 @@ public class geonames {
     private String countryCode;
     private String name;
     private String fclName;
-    private String[] adminCodes1;
+
     private String countryName;
     private String fcodeName;
     private String adminName1;
@@ -30,7 +30,6 @@ public class geonames {
     String countryCode,
     String name,
     String fclName,
-    String[] adminCodes1,
     String countryName,
     String fcodeName,
     String adminName1,
@@ -47,7 +46,6 @@ public class geonames {
         this.countryCode = countryCode;
         this.name = name;
         this.fclName = fclName;
-        this.adminCodes1 = adminCodes1;
         this.countryName = countryName;
         this.fcodeName = fcodeName;
         this.adminName1 = adminName1;
@@ -103,12 +101,7 @@ public class geonames {
     public void setFclName(String fclName) {
         this.fclName = fclName;
     }
-    public String[] getAdminCodes1() {
-        return adminCodes1;
-    }
-    public void setAdminCodes1(String[] adminCodes1) {
-        this.adminCodes1 = adminCodes1;
-    }
+
     public String getLat() {
         return lat;
     }

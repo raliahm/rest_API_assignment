@@ -48,11 +48,6 @@ public class RestApiController {
         return "Geonames" ;
     }
 
-    @GetMapping("/getPostalCodeData")
-    public String getPostalCodeData(@RequestParam("postalcode") String postalCode) {
-        System.out.println("getPostalCodeData");
-        return "getPostalCodeData";
-    }
 
     @GetMapping("/findNearbyPlaceName")
     public Object findNearbyPlaceName() {
@@ -93,8 +88,6 @@ public class RestApiController {
                     System.out.println("name: " + name);
                     String fclName = geoname.get("fclName").asText();
                     System.out.println("fclName: " + fclName);
-                    String[] adminCodes1 = geoname.get("adminCodes1").asText().split(",");
-                    System.out.println("adminCodes1: " + adminCodes1[0]);
                     String countryName = geoname.get("countryName").asText();
                     System.out.println("countryName: " + countryName);
                     String fcodeName = geoname.get("fcodeName").asText();
